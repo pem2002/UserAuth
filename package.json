@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "test-email": "node testEmail.js"
+    "start": "nodemon server.js"
+   
   },
   "repository": {
     "type": "git",
