@@ -1,4 +1,4 @@
-const db = require('../config/db');
+const db = require('../Config/db');
 
 
 const createFoodTable = async () => {
@@ -25,5 +25,3 @@ const createFoodTable = async () => {
 module.exports = {
   createFoodTable
 };
-
-

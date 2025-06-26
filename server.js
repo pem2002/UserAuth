@@ -3,9 +3,8 @@ const path = require('path');
 require('dotenv').config();
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
-const { createUserTable } = require('./models/userModel');
-const { createFoodTable } = require('./models/foodModel');
-
+const { createUserTable } = require('./Models/userModel');
+const {createFoodTable}=require('./Models/foodModel');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -26,18 +25,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Route imports
 const authRoutes = require('./routes/authRoutes');
-const adminRoutes = require('./routes/adminRoutes');
-const userRoutes = require('./routes/userRoutes');
+const adminRoutes = require ('./routes/adminRoutes');
+const userRoutes = require ('./routes/userRoutes');
 
 app.use('/admin', adminRoutes);
 app.use('/', authRoutes);
-app.use('/user', userRoutes);
+app.use('/user', userRoutes)
 
 // Create user table if not exists
 createUserTable();
-
-// Create food table if not exists
 createFoodTable();
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
