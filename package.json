@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Suraj-Rayl503/User-Auth.git"
+    "url": "https://github.com/pem2002/UserAuth.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Suraj-Rayl503/User-Auth/issues"
+    "url": "https://github.com/pem2002/UserAuth.git"
   },
-  "homepage": "https://github.com/Suraj-Rayl503/User-Auth#readme",
+  "homepage": "https://github.com/pem2002/UserAuth.git",
   "dependencies": {
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
