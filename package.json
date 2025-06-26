@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-  "test-email": "node testEmail.js"
+    "test-email": "node testEmail.js"
   },
   "repository": {
     "type": "git",
